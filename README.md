@@ -86,3 +86,18 @@ set ANTHROPIC_API_KEY=sk-ant-...
 ---
 
 ## 📁 Project Structure
+```
+qpgen/
+├── backend/
+│   ├── main.py            # FastAPI app
+│   ├── text_extractor.py  # PDF/DOCX/PPTX/TXT parser
+│   ├── preprocessor.py    # NLP pipeline
+│   ├── llm_service.py     # Claude API + fallback
+│   ├── pdf_generator.py   # PDF export
+│   └── analytics.py       # Usage tracking
+└── frontend/
+    └── src/
+        ├── pages/         # Home, Results, Dashboard
+        ├── components/    # Layout
+        └── utils/         # API calls
+```
